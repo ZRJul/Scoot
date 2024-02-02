@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  max-width: 1275px;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.m-auto {
+  margin: auto;
+}
+
+.button_box {
+  width: 180px;
+  height: 53px;
+  background-color: #FCB72B;
+  border: none;
+  color: #FFF;
+  text-align: center;
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 15px;
+  line-height: 25px;
+}
+.button_box:hover {
+  background-color: #FFF;
+  color: #FCB72B;
+  border: 3px solid;
+}
+
+.bg_round_box {
+  width: 445px;
+  height: 445px;
+  border-radius: 445px;
+}
+
+.sm_round_box {
+  width: 240px;
+  height: 240px;
+  border-radius: 240px;
+}
+
+.main_title {
+  color: #FFF;
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 56px;
+  line-height: 56px;
+  letter-spacing: -2.5px;
+}
+
+.second_title {
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: -2.143px;
+  color: #495567;
+}
+
+.cross_title {
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: -1.071px;
+  color: #495567;
+}
+
+.global_text {
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 15px;
+  line-height: 25px;
+  color: #939CAA;
+}
+
+.link_font {
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 15px;
+  line-height: 25px;
+  color: #939CAA;
+}
+.link_font:hover {
+  color: #FCB72B;
+}
+
+header .menu_box {
+  padding: 22px 0;
+  max-width: 1106px;
+  margin: auto;
+  justify-content: space-between;
+}
+header .menu_box .menu {
+  align-items: center;
+}
+header .menu_box .menu .logo {
+  margin-right: 58px;
+}
+header .menu_box .menu ul {
+  gap: 32px;
+}
+header .menu_box .menu ul li {
+  list-style: none;
+}
+header .menu_box .menu a {
+  text-decoration: none;
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  font-style: normal;
+  color: #939CAA;
+  font-size: 15px;
+  line-height: 25px;
+}
+
+.main_banner {
+  background-image: url("../images/homePageImage/banner.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 153px;
+  padding-bottom: 152px;
+}
+.main_banner .banner_title {
+  max-width: 500px;
+  margin-left: 165px;
+  margin-bottom: 40px;
+}
+.main_banner .main_content {
+  position: relative;
+}
+.main_banner .main_content .main_line_box {
+  margin-top: 49px;
+  margin-right: 57px;
+  max-width: 203px;
+}
+.main_banner .main_content .main_line_box img {
+  width: 100%;
+}
+.main_banner .main_content .main_content_module {
+  margin-right: 40px;
+  max-width: 405px;
+}
+.main_banner .main_content .main_content_module p {
+  margin-bottom: 40px;
+}
+.main_banner .main_content .main_arrow_box {
+  margin-top: 49px;
+  max-width: 447px;
+}
+.main_banner .main_content .main_arrow_box img {
+  width: 100%;
+}
+.main_banner .main_content .main_circle_box {
+  position: absolute;
+  right: -45px;
+  top: 118px;
+}
+
+/*# sourceMappingURL=styles.css.map */
