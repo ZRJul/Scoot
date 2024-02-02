@@ -1,0 +1,49 @@
+// colors
+$yellow: #FCB72B;
+
+$dark_navy: #495567;
+
+$dim_grey: #939CAA;
+
+$light_grey: #E5ECF4;
+
+$snow: #F2F5F9;
+
+$light_yellow: #FFF4DF;
+
+//fonts
+
+@mixin space_font {
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  font-style: normal;
+}
+
+@mixin lexend_font {
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+//screens
+@mixin max-screen($res)
+{
+  @media screen and (max-width: $res)
+  {
+    @content;
+  }
+}
+
+@mixin screen($min, $max)
+{
+  @media screen and (min-width: $min) and (max-width: $max)
+  {
+    @content;
+  }
+}
+
+@mixin min-screen($min) {
+  @media screen and (min-width: $min) {
+    @content;
+  }
+}

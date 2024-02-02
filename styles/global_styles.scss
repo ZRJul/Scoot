@@ -1,0 +1,95 @@
+@import "mixins";
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.container{
+  max-width: 1275px;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.m-auto{
+  margin: auto;
+}
+
+//button
+.button_box{
+  width: 180px;
+  height: 53px;
+  background-color: $yellow;
+  border: none;
+  color: #FFF;
+  text-align: center;
+  @include space_font;
+  font-size: 15px;
+  line-height: 25px;
+
+  &:hover{
+    background-color: #FFF;
+    color: $yellow;
+    border: 3px solid;
+  }
+}
+
+// for big round containers
+.bg_round_box{
+  width: 445px;
+  height: 445px;
+  border-radius: 445px;
+}
+
+//for small round containers
+.sm_round_box{
+  width: 240px;
+  height: 240px;
+  border-radius: 240px;
+}
+
+//text
+.main_title{
+  color: #FFF;
+  @include space_font;
+  font-size: 56px;
+  line-height: 56px;
+  letter-spacing: -2.5px;
+}
+
+.second_title{
+  @include space_font;
+  font-size: 48px; //on page About section FAQs size 40
+  line-height: 48px;
+  letter-spacing: -2.143px;
+  color: $dark_navy; // in footer white color
+}
+
+.cross_title{
+  @include space_font;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: -1.071px;
+  color: $dark_navy;
+}
+
+
+.global_text{
+  @include lexend_font;
+  font-size: 15px;
+  line-height: 25px;
+  color: $dim_grey; //in some sections the color changes
+}
+
+//header and footer links
+.link_font{
+  @include space_font;
+  font-size: 15px;
+  line-height: 25px;
+  color: $dim_grey;
+  &:hover{
+    color: $yellow;
+  }
+}

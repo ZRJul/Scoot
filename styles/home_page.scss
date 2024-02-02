@@ -1,0 +1,51 @@
+@import "mixins";
+
+//section main_banner
+.main_banner{
+  background-image: url('../images/homePageImage/banner.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 153px;
+  padding-bottom: 152px;
+
+  .banner_title{
+    max-width: 500px;
+    margin-left: 165px;
+    margin-bottom: 40px;
+  }
+
+  .main_content{
+    position: relative;
+
+    .main_line_box{
+      margin-top: 49px;
+      margin-right: 57px;
+      max-width: 203px;
+      img{
+        width: 100%;
+      }
+    }
+
+    .main_content_module{
+      margin-right: 40px;
+      max-width: 405px;
+      p{
+        margin-bottom: 40px;
+      }
+    }
+
+    .main_arrow_box{
+      margin-top: 49px;
+      max-width: 447px;
+      img{
+        width: 100%;
+      }
+    }
+
+    .main_circle_box{
+      position: absolute;
+      right: -45px;
+      top:118px
+    }
+  }
+}

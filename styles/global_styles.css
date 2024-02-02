@@ -1,0 +1,31 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  max-width: 1275px;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.m-auto {
+  margin: auto;
+}
+
+.button {
+  width: 180px;
+  height: 53px;
+  background-color: #FCB72B;
+  color: #FFF;
+  text-align: center;
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 15px;
+  line-height: 25px;
+}
+
+/*# sourceMappingURL=global_styles.css.map */
