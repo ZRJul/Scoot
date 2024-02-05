@@ -49,3 +49,88 @@
     }
   }
 }
+
+//section manual
+.manual{
+  padding-top: 160px;
+  padding-bottom: 180px;
+  position: relative;
+  .manual_line{
+    width: 974px;
+    height: 1px;
+    background-color: #E5ECF4;
+    border: 15px solid rgb(229, 236, 244);
+    position: absolute;
+    top: 193px;
+    z-index: -1;
+  }
+  .container{
+    margin-left: 165px;
+    gap: 30px;
+    .manual_box{
+      width: 350px;
+
+      h4{
+        margin-top: 40px;
+        margin-bottom: 27px;
+      }
+    }
+  }
+}
+
+//section telemetry
+
+.telemetry{
+  padding-bottom: 160px;
+  .container{
+    margin-left: 165px;
+    position: relative;
+    overflow: hidden;
+    .telemetry_text{
+      max-width: 445px;
+      margin-right: 220px;
+      padding-top: 86px;
+      h3{
+        margin-bottom: 24px;
+      }
+      p{
+        margin-bottom: 40px;
+      }
+    }
+    .telemetry_img{
+      position: relative;
+      padding-top: 53px;
+      .tele_img_box{
+        border-radius: 50%;
+        width: 445px;
+        height: 445px;
+        overflow: hidden;
+        img{
+          width: 100%;
+          height: auto;
+          display: block;
+        }
+      }
+
+      .telemetry_arrow{
+        position: absolute;
+        bottom: 0;
+        left: -125px;
+      }
+    }
+    .telemetry_circle{
+      border-radius: 50%;
+      width: 445px;
+      aspect-ratio: 1/1;
+
+      background-color: $light_grey;
+      position: absolute;
+      right: -400px;
+      top: 53px;
+      z-index: -1;
+    }
+
+
+
+  }
+}

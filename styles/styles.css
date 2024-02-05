@@ -5,6 +5,11 @@
   margin: 0;
 }
 
+body {
+  width: 1440px;
+  margin: auto;
+}
+
 .container {
   max-width: 1275px;
 }
@@ -168,6 +173,82 @@ header .menu_box .menu a {
   position: absolute;
   right: -45px;
   top: 118px;
+}
+
+.manual {
+  padding-top: 160px;
+  padding-bottom: 180px;
+  position: relative;
+}
+.manual .manual_line {
+  width: 974px;
+  height: 1px;
+  background-color: #E5ECF4;
+  border: 15px solid rgb(229, 236, 244);
+  position: absolute;
+  top: 193px;
+  z-index: -1;
+}
+.manual .container {
+  margin-left: 165px;
+  gap: 30px;
+}
+.manual .container .manual_box {
+  width: 350px;
+}
+.manual .container .manual_box h4 {
+  margin-top: 40px;
+  margin-bottom: 27px;
+}
+
+.telemetry {
+  padding-bottom: 160px;
+}
+.telemetry .container {
+  margin-left: 165px;
+  position: relative;
+  overflow: hidden;
+}
+.telemetry .container .telemetry_text {
+  max-width: 445px;
+  margin-right: 220px;
+  padding-top: 86px;
+}
+.telemetry .container .telemetry_text h3 {
+  margin-bottom: 24px;
+}
+.telemetry .container .telemetry_text p {
+  margin-bottom: 40px;
+}
+.telemetry .container .telemetry_img {
+  position: relative;
+  padding-top: 53px;
+}
+.telemetry .container .telemetry_img .tele_img_box {
+  border-radius: 50%;
+  width: 445px;
+  height: 445px;
+  overflow: hidden;
+}
+.telemetry .container .telemetry_img .tele_img_box img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.telemetry .container .telemetry_img .telemetry_arrow {
+  position: absolute;
+  bottom: 0;
+  left: -125px;
+}
+.telemetry .container .telemetry_circle {
+  border-radius: 50%;
+  width: 445px;
+  aspect-ratio: 1/1;
+  background-color: #E5ECF4;
+  position: absolute;
+  right: -400px;
+  top: 53px;
+  z-index: -1;
 }
 
 /*# sourceMappingURL=styles.css.map */
