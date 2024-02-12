@@ -24,10 +24,6 @@ header{
 
       a{
         text-decoration: none;
-        @include space_font;
-        color: $dim_grey;
-        font-size: 15px;
-        line-height: 25px;
       }
     }
   }

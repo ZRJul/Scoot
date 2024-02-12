@@ -1,0 +1,80 @@
+@import "mixins";
+
+footer{
+  a{
+    text-decoration: none;
+  }
+
+  ul{
+    list-style: none;
+  }
+
+  .footer_apps{
+    padding: 102px 0;
+    background-color: $dark_navy;
+    position: relative;
+    overflow: hidden;
+
+    .footer_sign{
+      max-width: 1106px;
+      margin: auto;
+      justify-content: space-between;
+
+      h2{
+        color: #FFFFFF;
+      }
+    }
+
+    .footer_store{
+      gap: 18px;
+      align-items: center;
+    }
+
+    .footer_circle{
+      position: absolute;
+      top: 150px;
+      left: 450px;
+      gap:56px;
+
+      .circle{
+        width: 347px;
+        height: 347px;
+        border-radius: 50%;
+        border: 15px solid rgb(229, 236, 244);
+        opacity: 0.1;
+
+        &:last-of-type{
+          background-color: #E5ECF4;
+        }
+
+      }
+    }
+  }
+
+  .footer_menu{
+    background-color: #333A44;
+    padding: 35px 0;
+    .footer_nav_box{
+      max-width: 1106px;
+      margin: auto;
+      justify-content: space-between;
+
+      .logo{
+        margin-right: 58px;
+      }
+
+      .footer_nav{
+        align-items: center;
+        ul{
+          gap: 32px;
+        }
+      }
+
+      .footer_icon{
+        ul{
+          gap: 24px;
+        }
+      }
+    }
+  }
+}
