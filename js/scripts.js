@@ -1,7 +1,5 @@
-// connection header.html to all pages
-// fetch('html/components/header.html')
-//     .then(response => response.text())
-//     .then(html => document.getElementById('header').innerHTML = html);
+// connection header.html to main pages
+
 
 
 // Функция для асинхронной загрузки и вставки HTML-кода компонента
@@ -13,7 +11,6 @@ function loadComponent(componentUrl, containerId) {
 
 // Загрузка и вставка компонента header.html в контейнер headerContainer
 loadComponent('html/components/header.html', 'header');
-
 
 
 function loadComponentFooter(componentUrl, containerId) {

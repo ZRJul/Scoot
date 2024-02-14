@@ -11,7 +11,7 @@ body {
 }
 
 .container {
-  max-width: 1275px;
+  max-width: 1110px;
 }
 
 .d-flex {
@@ -106,7 +106,6 @@ body {
 
 header .menu_box {
   padding: 22px 0;
-  max-width: 1106px;
   margin: auto;
   justify-content: space-between;
 }
@@ -184,7 +183,7 @@ header .menu_box .menu a {
   z-index: -1;
 }
 .manual .container {
-  margin-left: 165px;
+  margin: auto;
   gap: 30px;
 }
 .manual .container .manual_box {
@@ -197,15 +196,15 @@ header .menu_box .menu a {
 
 .telemetry {
   padding-bottom: 160px;
-}
-.telemetry .container {
-  margin-left: 165px;
   position: relative;
   overflow: hidden;
 }
+.telemetry .container {
+  margin: auto;
+  justify-content: space-between;
+}
 .telemetry .container .telemetry_text {
   max-width: 445px;
-  margin-right: 220px;
   padding-top: 86px;
 }
 .telemetry .container .telemetry_text h3 {
@@ -244,6 +243,10 @@ header .menu_box .menu a {
   position: relative;
   overflow: hidden;
 }
+.city .container {
+  margin: auto;
+  justify-content: space-between;
+}
 .city .city_circle {
   background-color: #E5ECF4;
   position: absolute;
@@ -251,7 +254,6 @@ header .menu_box .menu a {
   left: -335px;
 }
 .city .city_img {
-  margin-left: 165px;
   position: relative;
 }
 .city .city_img .city_img_box {
@@ -268,7 +270,7 @@ header .menu_box .menu a {
   left: -545px;
 }
 .city .city_text {
-  margin-left: 220px;
+  max-width: 445px;
   padding-top: 66px;
 }
 .city .city_text h3 {
@@ -280,15 +282,15 @@ header .menu_box .menu a {
 
 .payments {
   padding-bottom: 200px;
+  overflow: hidden;
+  position: relative;
 }
 .payments .container {
-  margin-left: 165px;
-  position: relative;
-  overflow: hidden;
+  margin: auto;
+  justify-content: space-between;
 }
 .payments .container .payments_text {
   max-width: 445px;
-  margin-right: 220px;
   padding-top: 66px;
 }
 .payments .container .payments_text h3 {
@@ -334,7 +336,6 @@ footer .footer_apps {
   overflow: hidden;
 }
 footer .footer_apps .footer_sign {
-  max-width: 1106px;
   margin: auto;
   justify-content: space-between;
 }
@@ -366,21 +367,28 @@ footer .footer_menu {
   padding: 35px 0;
 }
 footer .footer_menu .footer_nav_box {
-  max-width: 1106px;
   margin: auto;
   justify-content: space-between;
-}
-footer .footer_menu .footer_nav_box .logo {
-  margin-right: 58px;
+  align-items: center;
 }
 footer .footer_menu .footer_nav_box .footer_nav {
   align-items: center;
+}
+footer .footer_menu .footer_nav_box .footer_nav .logo {
+  margin-right: 58px;
 }
 footer .footer_menu .footer_nav_box .footer_nav ul {
   gap: 32px;
 }
 footer .footer_menu .footer_nav_box .footer_icon ul {
   gap: 24px;
+}
+footer .footer_menu .footer_nav_box .footer_icon ul a {
+  color: #FCB72B;
+  display: block;
+}
+footer .footer_menu .footer_nav_box .footer_icon ul a:hover {
+  color: #E5ECF4;
 }
 
 /*# sourceMappingURL=styles.css.map */
