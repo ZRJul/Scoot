@@ -1,1 +1,158 @@
 @import "mixins";
+
+//section main_about
+.main_about {
+  background-image: url("/images/aboutPage/about_banner.jpg");
+  padding: 72px 0;
+  position: relative;
+
+  .container {
+    margin: auto;
+  }
+
+  .main_about_img {
+    position: absolute;
+    top: 68px;
+    right: -31px;
+
+  }
+}
+
+// section mobility
+.mobility {
+  padding-top: 120px;
+  position: relative;
+  overflow: hidden;
+
+  .container {
+    margin: auto;
+    justify-content: space-between;
+
+    .mobility_text {
+      max-width: 445px;
+      padding-top: 125px;
+
+      h3 {
+        margin-bottom: 24px;
+      }
+    }
+
+    .mobility_img {
+
+      .mobility_img_box {
+        overflow: hidden;
+
+        img {
+
+          height: auto;
+          display: inline-block;
+        }
+      }
+
+      .mobility_arrow {
+        position: absolute;
+        bottom: 38px;
+        right: 0;
+      }
+    }
+  }
+
+  .mobility_circle {
+    background-color: $light_grey;
+    position: absolute;
+    right: -350px;
+    top: 120px;
+    z-index: -1;
+  }
+}
+
+// section urban
+.urban {
+  padding-top: 120px;
+  position: relative;
+  overflow: hidden;
+
+  .urban_circle {
+    background-color: $light_grey;
+    position: absolute;
+    top: 120px;
+    left: -335px;
+  }
+
+  .urban_arrow{
+    position: absolute;
+    top: 120px;
+    left: -400px;
+    z-index: 2;
+  }
+
+  .container {
+    margin: auto;
+    justify-content: space-between;
+
+    .urban_img_box{
+      overflow: hidden;
+      position: relative;
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    .urban_text{
+      max-width: 445px;
+      padding-top: 125px;
+
+      h3 {
+        margin-bottom: 24px;
+      }
+    }
+  }
+}
+
+//section values
+
+.values{
+  padding-top: 120px;
+
+  .container{
+    margin: auto;
+    text-align: center;
+
+    h3{
+      margin-bottom: 48px;
+    }
+
+    .values_about_cards{
+      justify-content: space-between;
+
+      .card_box{
+        max-width: 350px;
+        .card_box_img{
+          margin-bottom: 32px;
+          img{
+            width: 100%;
+          }
+        }
+      }
+
+      h4{
+        margin-bottom: 27px;
+      }
+    }
+  }
+}
+
+//section questions
+.questions{
+  padding-top: 120px;
+  padding-bottom: 160px;
+  .container{
+    margin: auto;
+    h3{
+      text-align: center;
+    }
+
+  }
+}

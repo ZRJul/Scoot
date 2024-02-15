@@ -391,4 +391,128 @@ footer .footer_menu .footer_nav_box .footer_icon ul a:hover {
   color: #E5ECF4;
 }
 
+.main_about {
+  background-image: url("/images/aboutPage/about_banner.jpg");
+  padding: 72px 0;
+  position: relative;
+}
+.main_about .container {
+  margin: auto;
+}
+.main_about .main_about_img {
+  position: absolute;
+  top: 68px;
+  right: -31px;
+}
+
+.mobility {
+  padding-top: 120px;
+  position: relative;
+  overflow: hidden;
+}
+.mobility .container {
+  margin: auto;
+  justify-content: space-between;
+}
+.mobility .container .mobility_text {
+  max-width: 445px;
+  padding-top: 125px;
+}
+.mobility .container .mobility_text h3 {
+  margin-bottom: 24px;
+}
+.mobility .container .mobility_img .mobility_img_box {
+  overflow: hidden;
+}
+.mobility .container .mobility_img .mobility_img_box img {
+  height: auto;
+  display: inline-block;
+}
+.mobility .container .mobility_img .mobility_arrow {
+  position: absolute;
+  bottom: 38px;
+  right: 0;
+}
+.mobility .mobility_circle {
+  background-color: #E5ECF4;
+  position: absolute;
+  right: -350px;
+  top: 120px;
+  z-index: -1;
+}
+
+.urban {
+  padding-top: 120px;
+  position: relative;
+  overflow: hidden;
+}
+.urban .urban_circle {
+  background-color: #E5ECF4;
+  position: absolute;
+  top: 120px;
+  left: -335px;
+}
+.urban .urban_arrow {
+  position: absolute;
+  top: 120px;
+  left: -400px;
+  z-index: 2;
+}
+.urban .container {
+  margin: auto;
+  justify-content: space-between;
+}
+.urban .container .urban_img_box {
+  overflow: hidden;
+  position: relative;
+}
+.urban .container .urban_img_box img {
+  width: 100%;
+  height: auto;
+}
+.urban .container .urban_text {
+  max-width: 445px;
+  padding-top: 125px;
+}
+.urban .container .urban_text h3 {
+  margin-bottom: 24px;
+}
+
+.values {
+  padding-top: 120px;
+}
+.values .container {
+  margin: auto;
+  text-align: center;
+}
+.values .container h3 {
+  margin-bottom: 48px;
+}
+.values .container .values_about_cards {
+  justify-content: space-between;
+}
+.values .container .values_about_cards .card_box {
+  max-width: 350px;
+}
+.values .container .values_about_cards .card_box .card_box_img {
+  margin-bottom: 32px;
+}
+.values .container .values_about_cards .card_box .card_box_img img {
+  width: 100%;
+}
+.values .container .values_about_cards h4 {
+  margin-bottom: 27px;
+}
+
+.questions {
+  padding-top: 120px;
+  padding-bottom: 160px;
+}
+.questions .container {
+  margin: auto;
+}
+.questions .container h3 {
+  text-align: center;
+}
+
 /*# sourceMappingURL=styles.css.map */
