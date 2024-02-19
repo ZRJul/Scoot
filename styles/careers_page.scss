@@ -1,0 +1,129 @@
+@import "mixins";
+
+//section "main_careers"
+
+.main_careers {
+  background-image: url("/images/careersPage/careers_banner.jpeg");
+  padding: 72px 0;
+  position: relative;
+
+  .main_careers_img {
+    position: absolute;
+    top: 68px;
+    right: -31px;
+  }
+}
+
+//section "mission"
+.mission {
+  padding-top: 120px;
+  position: relative;
+  overflow: hidden;
+
+  .container {
+    justify-content: space-between;
+
+    .mission_text {
+      max-width: 445px;
+      padding-top: 125px;
+
+      h3 {
+        margin-bottom: 24px;
+      }
+
+      p{
+        margin-bottom: 40px;
+      }
+    }
+
+    .mission_img {
+
+      .mission_img_box {
+        overflow: hidden;
+
+        img {
+
+          height: auto;
+          display: inline-block;
+        }
+      }
+
+      .mission_arrow {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        right: 0;
+      }
+    }
+  }
+
+  .mission_circle {
+    background-color: $light_grey;
+    position: absolute;
+    right: -350px;
+    top: 120px;
+    z-index: -1;
+  }
+}
+
+//section "join"
+.join{
+  padding-top: 120px;
+
+  .container{
+    text-align: center;
+
+    h3{
+      margin-bottom: 48px;
+    }
+
+    .join_about_cards{
+      justify-content: space-between;
+
+      .card_box{
+        max-width: 350px;
+        .card_box_img{
+          margin-bottom: 32px;
+          img{
+            width: 100%;
+          }
+        }
+      }
+
+      h4{
+        margin-bottom: 27px;
+      }
+    }
+  }
+}
+
+//section "vacancy"
+.vacancy{
+  padding-top: 120px;
+  padding-bottom: 160px;
+
+  .vacancy_block:not(:last-child) {
+    margin-bottom: 24px;
+  }
+
+  .vacancy_block{
+    background-color: $snow;
+    justify-content: space-between;
+    padding-top: 32px;
+    padding-bottom: 35px;
+
+    .vacancy_block_text{
+      margin-left: 40px;
+
+      h4{
+        margin-bottom: 8px;
+      }
+    }
+
+    button{
+      margin-right: 64px;
+    }
+  }
+
+}
+

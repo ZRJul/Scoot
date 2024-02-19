@@ -1,0 +1,44 @@
+@import "mixins";
+
+//section "main_location"
+
+.main_location {
+  background-image: url("/images/locationsPage/locations_banner.jpeg");
+  padding: 72px 0;
+  position: relative;
+
+  .main_location_img {
+    position: absolute;
+    top: 68px;
+    right: -31px;
+  }
+}
+
+// section "map"
+
+.map{
+  padding-top: 120px;
+  .map_block{
+    img{
+      width: 100%;
+    }
+  }
+}
+
+//section "city_list"
+.city_list{
+  padding: 120px 0;
+  .container{
+    align-items: center;
+  }
+  .city_list_title{
+    max-width: 350px;
+    margin-right: 30px;
+  }
+
+  .city_list_text{
+    max-width: 445px;
+    margin-right: 105px;
+  }
+
+}

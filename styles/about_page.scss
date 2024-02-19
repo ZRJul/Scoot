@@ -152,7 +152,131 @@
     margin: auto;
     h3{
       text-align: center;
+      margin-bottom: 64px;
     }
+    .questions_how{
+      &:first-of-type{
+        margin-bottom: 64px;
+      }
+    }
+    .questions_how_text{
+      width: 350px;
+      margin-right: 30px;
 
+      h4{
+        font-size: 40px;
+      }
+    }
+    .accordion{
+      max-width: 730px;
+      .accordion_block{
+        p{
+          color: $dark_navy;
+        }
+      }
+    }
+  }
+
+  //accordion
+  .heading-primary {
+    font-size:2em;
+    padding:2em;
+  }
+
+  .accordion_block:not(:last-child) {
+    margin-bottom: 16px;
+  }
+
+  .accordion dd,
+  .accordion__panel {
+    background-color:#F2F5F9;
+    font-size:1em;
+    line-height:1.5em;
+    margin: 0;
+  }
+  .accordion p {
+    padding:1em 2em 1em 2em;
+  }
+
+  .accordion {
+    position:relative;
+  }
+
+  .accordionTitle,
+  .accordion__Heading {
+    background-color:#F2F5F9;
+    padding:32px 40px;
+    display:block;
+    text-decoration:none;
+    transition:background-color 0.5s ease-in-out;
+
+    &:before {
+      content: "\f078";
+      font-family: "Font Awesome 6 Free";
+      width: 16px;
+      height: 8px;
+      color: $yellow;
+      float:right;
+      transition: transform 0.3s ease-in-out;
+    }
+    &:hover {
+      background-color:#FFF4DF;
+    }
+  }
+
+  .accordionTitleActive,
+  .accordionTitle.is-expanded {
+    background-color:#F2F5F9;
+    &:before {
+
+      transform:rotate(-180deg);
+    }
+  }
+
+  .accordionItem {
+    height:auto;
+    overflow:hidden;
+    //SHAME: magic number to allow the accordion to animate
+
+    max-height:50em;
+    transition:max-height 1s;
+
+    @media screen and (min-width:48em) {
+      max-height:15em;
+      transition:max-height 0.5s
+    }
+  }
+
+  .accordionItem.is-collapsed {
+    max-height:0;
+  }
+
+  .animateIn {
+    animation: accordionIn 0.45s normal ease-in-out both 1;
+  }
+  .animateOut {
+    animation: accordionOut 0.45s alternate ease-in-out both 1;
+  }
+  @keyframes accordionIn {
+    0% {
+      opacity: 0;
+      transform:scale(0.9) rotateX(-60deg);
+      transform-origin: 50% 0;
+    }
+    100% {
+      opacity:1;
+      transform:scale(1);
+    }
+  }
+
+  @keyframes accordionOut {
+    0% {
+      opacity: 1;
+      transform:scale(1);
+    }
+    100% {
+      opacity:0;
+      transform:scale(0.9) rotateX(-60deg);
+    }
   }
 }
