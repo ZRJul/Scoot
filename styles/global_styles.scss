@@ -39,6 +39,7 @@ body{
     background-color: #FFF;
     color: $yellow;
     border: 3px solid;
+    cursor: pointer;
   }
 }
 
@@ -99,3 +100,9 @@ body{
     color: $yellow;
   }
 }
+
+.fade_out{
+  opacity: 0;
+  visibility: hidden;
+}
+

@@ -1,4 +1,4 @@
-// connection header.html to main pages
+// connection header.html_components to main pages
 
 
 
@@ -9,8 +9,8 @@ function loadComponent(componentUrl, containerId) {
         .then(html => document.getElementById(containerId).innerHTML = html);
 }
 
-// Загрузка и вставка компонента header.html в контейнер headerContainer
-loadComponent('html/components/header.html', 'header');
+// Загрузка и вставка компонента header.html_components в контейнер headerContainer
+loadComponent('header.html', 'header');
 
 
 function loadComponentFooter(componentUrl, containerId) {
@@ -19,5 +19,6 @@ function loadComponentFooter(componentUrl, containerId) {
         .then(html => document.getElementById(containerId).innerHTML = html);
 }
 
-// Загрузка и вставка компонента footer.html в контейнер headerContainer
-loadComponentFooter('html/components/footer.html', 'footer');
+// Загрузка и вставка компонента footer.html_components в контейнер headerContainer
+loadComponentFooter('footer.html', 'footer');
+

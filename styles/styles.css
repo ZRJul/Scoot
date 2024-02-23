@@ -40,6 +40,7 @@ body {
   background-color: #FFF;
   color: #FCB72B;
   border: 3px solid;
+  cursor: pointer;
 }
 
 .bg_round_box {
@@ -103,6 +104,11 @@ body {
 }
 .link_font:hover {
   color: #FCB72B;
+}
+
+.fade_out {
+  opacity: 0;
+  visibility: hidden;
 }
 
 header .menu_box {
