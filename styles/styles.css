@@ -399,7 +399,7 @@ footer .footer_menu .footer_nav_box .footer_icon ul a:hover {
 }
 
 .main_about {
-  background-image: url("/images/aboutPage/about_banner.jpg");
+  background-image: url("../images/aboutPage/about_banner.jpg");
   padding: 72px 0;
   position: relative;
 }
@@ -632,7 +632,7 @@ footer .footer_menu .footer_nav_box .footer_icon ul a:hover {
 }
 
 .main_careers {
-  background-image: url("/images/careersPage/careers_banner.jpeg");
+  background-image: url("../images/careersPage/careers_banner.jpeg");
   padding: 72px 0;
   position: relative;
 }
@@ -730,7 +730,7 @@ footer .footer_menu .footer_nav_box .footer_icon ul a:hover {
 }
 
 .main_location {
-  background-image: url("/images/locationsPage/locations_banner.jpeg");
+  background-image: url("../images/locationsPage/locations_banner.jpeg");
   padding: 72px 0;
   position: relative;
 }
