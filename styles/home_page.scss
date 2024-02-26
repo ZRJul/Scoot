@@ -1,79 +1,162 @@
 @import "mixins";
 
 //section main_banner
-.main_banner{
+.main_banner {
   background-image: url('../images/homePageImage/banner.jpeg');
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center center;
   padding-top: 153px;
   padding-bottom: 152px;
+  position: relative;
 
-  .banner_title{
+  @include screen(767px, 1200px) {
+    padding-top: 137px;
+    padding-bottom: 217px;
+  }
+
+  .banner_title {
     max-width: 500px;
     margin-left: 165px;
     margin-bottom: 40px;
+
+    @include screen(767px, 1200px) {
+      max-width: 573px;
+      margin: auto;
+      text-align: center;
+      padding-bottom: 24px;
+    }
   }
 
-  .main_content{
-    position: relative;
-
-    .main_line_box{
+  .main_content {
+    .main_line_box {
       margin-top: 49px;
       margin-right: 57px;
       max-width: 203px;
-      img{
+
+      img {
         width: 100%;
+      }
+
+      @include max-screen(1200px) {
+        display: none;
       }
     }
 
-    .main_content_module{
+    .main_content_module {
       margin-right: 40px;
       max-width: 405px;
-      p{
+
+      @include screen(767px, 1200px) {
+        max-width: 573px;
+        margin: auto;
+        text-align: center;
+      }
+
+      p {
         margin-bottom: 40px;
+
+        @include screen(767px, 1200px) {
+          margin-bottom: 32px;
+        }
       }
     }
 
-    .main_arrow_box{
+    .main_arrow_box {
       margin-top: 49px;
       max-width: 447px;
-      img{
+
+      @include screen(767px, 1200px) {
+        position: absolute;
+        bottom: 39px;
+        left: -127px;
+      }
+
+      img {
         width: 100%;
       }
     }
+  }
 
-    .main_circle_box{
-      position: absolute;
-      right: -45px;
-      top:118px
+  .main_circle_box {
+    position: absolute;
+    right: -45px;
+    bottom: 165px;
+
+    @include screen(767px, 1200px) {
+      bottom: 45px;
     }
   }
 }
 
 //section manual
-.manual{
+.manual {
   padding-top: 160px;
   padding-bottom: 180px;
-  position: relative;
 
-  .manual_line{
-    width: 974px;
-    height: 1px;
-    background-color: #E5ECF4;
-    border: 15px solid rgb(229, 236, 244);
-    position: absolute;
-    top: 193px;
-    z-index: -1;
+  @include max-screen(1200px) {
+    display: flex;
   }
-  .container{
+
+  @include max-screen(1200px) {
+    padding-top: 120px;
+    padding-bottom: 145px;
+  }
+
+
+  .container {
     margin: auto;
     gap: 30px;
-    .manual_box{
-      width: 350px;
+    position: relative;
 
-      h4{
+    @include max-screen(1200px) {
+      display: block;
+    }
+
+    @include max-screen(1200px) {
+      .manual_box:not(:last-child) {
+        margin-bottom: 40px;
+      }
+    }
+
+    .manual_line {
+      width: 974px;
+      height: 1px;
+      background-color: #E5ECF4;
+      border: 7.5px solid rgb(229, 236, 244);
+      position: absolute;
+      z-index: -1;
+      top: 39px;
+      left: -165px;
+
+      @include screen(767px, 1200px) {
+        width: 1px;
+        height: 513px;
+        left: 40px;
+        top: -120px;
+      }
+    }
+
+    .manual_box {
+      max-width: 350px;
+
+      @include max-screen(1200px) {
+        display: flex;
+        max-width: 573px;
+      }
+
+      .manual_box_text {
         margin-top: 40px;
-        margin-bottom: 27px;
+
+        @include max-screen(1200px) {
+          margin-top: 0;
+          margin-left: 79px;
+          max-width: 398px;
+        }
+
+        h4 {
+          margin-bottom: 27px;
+        }
       }
     }
   }
@@ -81,82 +164,145 @@
 
 //section telemetry
 
-.telemetry{
+.telemetry {
   padding-bottom: 160px;
   position: relative;
   overflow: hidden;
 
-  .container{
-    margin: auto;
-    justify-content: space-between;
+  @include screen(767px, 1200px){
+    padding-bottom: 128px;
+    display: flex;
+  }
 
-    .telemetry_text{
+  .container {
+    justify-content: space-between;
+    flex-direction: row;
+
+    @include max-screen(1200px){
+      display: block;
+    }
+
+    .telemetry_text {
       max-width: 445px;
       padding-top: 86px;
-      h3{
-        margin-bottom: 24px;
+
+      @include min-screen(1200px){
+        order: 1;
       }
-      p{
+
+      @include screen(767px, 1200px){
+        max-width: 573px;
+        text-align: center;
+        padding-top: 56px;
+      }
+
+      h3 {
+        margin-bottom: 24px;
+
+        @include screen(767px, 1200px){
+          max-width: 457px;
+          margin: auto;
+          padding-bottom: 40px;
+        }
+      }
+
+      p {
         margin-bottom: 40px;
       }
     }
 
-    .telemetry_img{
-      position: relative;
+    .telemetry_img {
       padding-top: 53px;
 
-      .tele_img_box{
+
+      @include min-screen(1200px){
+        order: 2;
+      }
+
+      @include max-screen(1200px){
+        padding-top: 0;
+      }
+
+      @include screen(767px, 1200px){
+        max-width: 445px;
+        margin: auto;
+      }
+
+
+      .tele_img_box {
         overflow: hidden;
 
-        img{
+        img {
           width: 100%;
           height: auto;
           display: block;
         }
       }
-
-      .telemetry_arrow{
-        position: absolute;
-        bottom: 0;
-        left: -125px;
-      }
     }
-    .telemetry_circle{
+
+    .telemetry_circle {
       background-color: $light_grey;
       position: absolute;
       right: -335px;
       top: 53px;
       z-index: -1;
+
+      @include screen(767px, 1200px){
+        top: 0;
+      }
     }
 
+  }
+  .telemetry_arrow {
+    position: absolute;
+    bottom: 160px;
+    right: 0;
+
+    @include screen(767px, 1200px){
+      top: 307px;
+    }
   }
 }
 
 //section city
-.city{
+.city {
   padding-bottom: 160px;
   position: relative;
   overflow: hidden;
 
-  .container{
-    margin: auto;
-    justify-content: space-between;
+  @include screen(767px, 1200px){
+    padding-bottom: 120px;
+    display: flex;
   }
 
-  .city_circle{
+  .container {
+    margin: auto;
+    justify-content: space-between;
+
+    @include max-screen(1200px){
+      display: block;
+    }
+  }
+
+  .city_circle {
     background-color: $light_grey;
     position: absolute;
     top: 0;
     left: -335px;
   }
 
-  .city_img{
+  .city_img {
     position: relative;
 
-    .city_img_box{
+    @include screen(767px, 1200px){
+      max-width: 445px;
+      margin: auto;
+    }
+
+    .city_img_box {
       overflow: hidden;
 
-      img{
+      img {
         width: 100%;
         height: auto;
         display: block;
@@ -170,14 +316,26 @@
     }
   }
 
-  .city_text{
+  .city_text {
     max-width: 445px;
     padding-top: 66px;
 
-    h3{
-      margin-bottom: 24px;
+    @include screen(767px, 1200px){
+      max-width: 573px;
+      text-align: center;
+      padding-top: 64px;
     }
-    p{
+
+    h3 {
+      margin-bottom: 24px;
+      @include screen(767px, 1200px){
+        max-width: 457px;
+        margin: auto;
+        padding-bottom: 40px;
+      }
+    }
+
+    p {
       margin-bottom: 40px;
     }
 
@@ -185,35 +343,69 @@
 }
 
 //section payments
-.payments{
+.payments {
   padding-bottom: 200px;
   overflow: hidden;
   position: relative;
 
-  .container{
+  @include screen(767px, 1200px){
+    padding-bottom: 104px;
+    display: flex;
+  }
+
+  .container {
     margin: auto;
     justify-content: space-between;
+    flex-direction: row;
 
-    .payments_text{
+    @include max-screen(1200px){
+      display: block;
+    }
+
+    .payments_text {
       max-width: 445px;
       padding-top: 66px;
 
-      h3{
-        margin-bottom: 24px;
+      @include min-screen(1200px){
+        order: 1;
       }
 
-      p{
+      @include screen(767px, 1200px){
+        max-width: 573px;
+        text-align: center;
+        padding-top: 64px;
+      }
+
+      h3 {
+        margin-bottom: 24px;
+        @include screen(767px, 1200px){
+          max-width: 457px;
+          margin: auto;
+          padding-bottom: 40px;
+        }
+      }
+
+      p {
         margin-bottom: 40px;
       }
     }
 
-    .payments_img{
+    .payments_img {
       position: relative;
 
-      .payments_img_box{
+      @include min-screen(1200px){
+        order: 2;
+      }
+
+      @include screen(767px, 1200px){
+        max-width: 445px;
+        margin: auto;
+      }
+
+      .payments_img_box {
         overflow: hidden;
 
-        img{
+        img {
           width: 100%;
           height: auto;
           display: block;
@@ -227,7 +419,7 @@
       }
     }
 
-    .payments_circle{
+    .payments_circle {
       background-color: $light_grey;
       position: absolute;
       right: -335px;

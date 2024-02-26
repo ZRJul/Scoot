@@ -9,31 +9,52 @@ footer {
     list-style: none;
   }
 
+
+
   .footer_apps {
     padding: 102px 0;
     background-color: $dark_navy;
     position: relative;
     overflow: hidden;
 
+    @include max-screen(1200px){
+      display: flex;
+    }
+
+    @include screen(767px, 1200px){
+      padding: 102px 40px;
+    }
+
     .footer_sign {
       margin: auto;
       justify-content: space-between;
 
+      @include max-screen(1200px){
+        display: block;
+        text-align: center;
+      }
+
       h2 {
         color: #FFFFFF;
+        @include max-screen(1200px){
+          margin-bottom: 40px;
+        }
       }
     }
 
     .footer_store {
       gap: 18px;
       align-items: center;
+      @include max-screen(1200px){
+        justify-content: center;
+      }
     }
 
     .footer_circle {
       position: absolute;
       top: 150px;
-      left: 450px;
-      gap: 56px;
+      right: -200px;
+      gap: 45px;
 
       .circle {
         width: 347px;
@@ -53,6 +74,10 @@ footer {
   .footer_menu {
     background-color: #333A44;
     padding: 35px 0;
+
+    @include screen(767px, 1200px){
+      padding: 35px 40px;
+    }
 
     .footer_nav_box {
       margin: auto;

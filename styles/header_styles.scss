@@ -1,9 +1,12 @@
 @import "mixins";
 
 header{
+  @include screen(767px, 1200px){
+    padding: 0 20px;
+  }
+
   .menu_box{
     padding: 22px 0;
-    margin: auto;
     justify-content: space-between;
 
     .menu{

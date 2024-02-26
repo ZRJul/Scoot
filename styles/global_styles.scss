@@ -6,8 +6,9 @@
 
 }
 body{
-  width: 1440px;
+  max-width: 1440px;
   margin: auto;
+  overflow-x: hidden;
 }
 
 .container{
