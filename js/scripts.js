@@ -1,17 +1,13 @@
-// connection header.html_components to main pages
-
-
-
-// Функция для асинхронной загрузки и вставки HTML-кода компонента
-function loadComponent(componentUrl, containerId) {
+function loadComponent(componentUrl, containerId, callback) {
     fetch(componentUrl)
         .then(response => response.text())
-        .then(html => document.getElementById(containerId).innerHTML = html);
+        .then(html => {
+            document.getElementById(containerId).innerHTML = html;
+            if (callback) {
+                callback(); // Вызываем функцию обратного вызова после успешной загрузки содержимого
+            }
+        });
 }
-
-// Загрузка и вставка компонента header.html_components в контейнер headerContainer
-loadComponent('header.html', 'header');
-
 
 function loadComponentFooter(componentUrl, containerId) {
     fetch(componentUrl)
@@ -19,6 +15,17 @@ function loadComponentFooter(componentUrl, containerId) {
         .then(html => document.getElementById(containerId).innerHTML = html);
 }
 
-// Загрузка и вставка компонента footer.html_components в контейнер headerContainer
+// Загрузка header.html и добавление обработчика событий после загрузки
+loadComponent('header.html', 'header', function() {
+    let toggle = document.getElementById('toggle');
+    let box = document.getElementById('menu');
+
+    toggle.addEventListener('click', function() {
+        box.classList.toggle('active');
+    });
+});
+
+// Загрузка footer.html
 loadComponentFooter('footer.html', 'footer');
+
 

@@ -1,31 +1,163 @@
 @import "mixins";
 
-header{
-  @include screen(767px, 1200px){
+header {
+  @include screen(767px, 1200px) {
     padding: 0 20px;
   }
 
-  .menu_box{
+  .menu_box {
     padding: 22px 0;
-    justify-content: space-between;
+    align-items: center;
 
-    .menu{
-      align-items: center;
+    .logo {
+      margin-right: 58px;
+      width: 107px;
 
-      .logo{
-        margin-right: 58px;
+      @include max-screen(767px) {
+        width: 75px;
+        margin: auto;
       }
 
-      ul{
-        gap: 32px;
+      img {
+        width: 100%;
+      }
+    }
 
-        li{
-          list-style: none;
+    .header_menu {
+      justify-content: space-between;
+      width: 944px;
+      align-items: center;
+
+      @include max-screen(737px) {
+        display: block;
+
+        button{
+          margin-left: 32px;
+        }
+
+      }
+    }
+
+    ul {
+      gap: 32px;
+
+      @include max-screen(737px) {
+        display: block;
+        margin-left: 32px;
+      }
+
+      li {
+        list-style: none;
+
+        @include max-screen(737px){
+          margin-bottom: 24px;
+          &:last-of-type{
+            margin-bottom: 50px;
+          }
+          a{
+            font-size: 18px;
+            color: $light_grey;
+          }
+        }
+      }
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+  }
+
+  @include min-screen(767px) {
+    #toggle {
+      display: none;
+    }
+  }
+
+  @include max-screen(767px) {
+    #menu {
+      background: #333A44;
+      width: 256px;
+      height: 100vh;
+      padding-top: 64px;
+      visibility: visible;
+      opacity: 1;
+      justify-content: center;
+      flex-direction: column;
+      border-radius: 3px;
+      transition: all 300ms ease-in-out;
+      position: absolute;
+      left: -300px;
+      top: 68px;
+      z-index: 9;
+
+      &.active {
+        left: 0;
+      }
+    }
+
+    #toggle {
+      position: absolute;
+      left: 32px;
+      top: 24px;
+      width: 18px;
+      height: 18px;
+      transition: all 300ms ease-in-out;
+      z-index: 10;
+
+      input {
+        position: absolute;
+        top: -3px;
+        left: -3px;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        opacity: 0;
+        cursor: pointer;
+
+        &:checked {
+          + span {
+            background: transparent;
+            left: 10px;
+
+            &:after {
+              transform: rotate(45deg) translate(-1px, -11px);
+              left: -15px;
+              background: $yellow;
+            }
+
+            &:before {
+              transform: rotate(-45deg) translate(-3px, 5px);
+              left: -10px;
+              background: $yellow;
+            }
+          }
         }
       }
 
-      a{
-        text-decoration: none;
+      span {
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        background: $yellow;
+        margin-top: 10px;
+        transition: all 0.1s;
+        left: 0;
+
+        &:before, &:after {
+          content: "";
+          position: absolute;
+          width: 100%;
+          height: 3px;
+          background: $yellow;
+          top: -7px;
+          left: 0;
+          transition: all 0.3s;
+        }
+
+        &:after {
+          top: 7px;
+        }
       }
     }
   }
