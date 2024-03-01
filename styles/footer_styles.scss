@@ -9,8 +9,6 @@ footer {
     list-style: none;
   }
 
-
-
   .footer_apps {
     padding: 102px 0;
     background-color: $dark_navy;
@@ -23,6 +21,10 @@ footer {
 
     @include screen(767px, 1200px){
       padding: 102px 40px;
+    }
+
+    @include max-screen(767px){
+      padding: 88px 0;
     }
 
     .footer_sign {
@@ -45,8 +47,24 @@ footer {
     .footer_store {
       gap: 18px;
       align-items: center;
+
+      img{
+        border-radius: 4px;
+      }
       @include max-screen(1200px){
         justify-content: center;
+
+        .apple{
+          img{
+            max-width: 113px;
+          }
+        }
+
+        .google{
+          img{
+            max-width: 130px;
+          }
+        }
       }
     }
 
@@ -79,24 +97,59 @@ footer {
       padding: 35px 40px;
     }
 
+    @include max-screen(767px){
+      padding: 64px 0 88px 0;
+    }
+
     .footer_nav_box {
       margin: auto;
       justify-content: space-between;
       align-items: center;
 
+      @include max-screen(767px){
+        display: block;
+        text-align: center;
+      }
+
       .footer_nav {
         align-items: center;
 
+        @include max-screen(767px){
+          display: block;
+        }
+
         .logo {
           margin-right: 58px;
+
+          @include max-screen(767px){
+            margin: auto;
+          }
+        }
+
+        nav{
+          @include max-screen(767px){
+            margin-top: 70px;
+            margin-bottom: 85px;
+          }
         }
 
         ul {
           gap: 32px;
+          @include max-screen(767px){
+            display: block;
+              li:not(:last-child) {
+                margin-bottom: 16px;
+              }
+          }
         }
       }
 
       .footer_icon {
+        @include max-screen(767px){
+          max-width: 120px;
+          margin: auto;
+        }
+
         ul {
           gap: 24px;
 

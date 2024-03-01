@@ -15,6 +15,11 @@
     padding-bottom: 217px;
   }
 
+  @include max-screen(767px){
+    padding-top: 115px;
+    padding-bottom: 179px;
+  }
+
   .banner_title {
     max-width: 500px;
     margin-left: 165px;
@@ -22,6 +27,13 @@
 
     @include screen(767px, 1200px) {
       max-width: 573px;
+      margin: auto;
+      text-align: center;
+      padding-bottom: 24px;
+    }
+
+    @include max-screen(767px){
+      max-width: 311px;
       margin: auto;
       text-align: center;
       padding-bottom: 24px;
@@ -53,11 +65,21 @@
         text-align: center;
       }
 
+      @include max-screen(767px){
+        margin: auto;
+        text-align: center;
+        max-width: 311px;
+      }
+
       p {
         margin-bottom: 40px;
 
         @include screen(767px, 1200px) {
           margin-bottom: 32px;
+        }
+
+        @include max-screen(767px){
+          margin-bottom: 34px;
         }
       }
     }
@@ -70,6 +92,12 @@
         position: absolute;
         bottom: 39px;
         left: -127px;
+      }
+
+      @include max-screen(767px){
+        position: absolute;
+        left: -312px;
+        bottom: 34px;
       }
 
       img {
@@ -85,6 +113,10 @@
 
     @include screen(767px, 1200px) {
       bottom: 45px;
+    }
+
+    @include max-screen(767px){
+      display: none;
     }
   }
 }
@@ -103,6 +135,10 @@
     padding-bottom: 145px;
   }
 
+  @include max-screen(767px){
+    padding-bottom: 120px;
+  }
+
 
   .container {
     margin: auto;
@@ -113,9 +149,15 @@
       display: block;
     }
 
-    @include max-screen(1200px) {
+    @include screen(767px, 1200px) {
       .manual_box:not(:last-child) {
         margin-bottom: 40px;
+      }
+    }
+
+    @include max-screen(767px){
+      .manual_box:not(:last-child) {
+        margin-bottom: 48px;
       }
     }
 
@@ -135,6 +177,10 @@
         left: 40px;
         top: -120px;
       }
+
+      @include max-screen(767px){
+        display: none;
+      }
     }
 
     .manual_box {
@@ -145,17 +191,31 @@
         max-width: 573px;
       }
 
+      @include max-screen(767px){
+        display: block;
+        max-width: 311px;
+        text-align: center;
+      }
+
       .manual_box_text {
         margin-top: 40px;
 
-        @include max-screen(1200px) {
+        @include screen (767px, 1200px) {
           margin-top: 0;
           margin-left: 79px;
           max-width: 398px;
         }
 
+        @include max-screen(767px){
+          margin-top: 24px;
+        }
+
         h4 {
           margin-bottom: 27px;
+
+          @include max-screen(767px){
+            margin-top: 24px;
+          }
         }
       }
     }
@@ -174,6 +234,10 @@
     display: flex;
   }
 
+  @include max-screen(767px){
+    padding-bottom: 120px;
+  }
+
   .container {
     justify-content: space-between;
     flex-direction: row;
@@ -181,6 +245,12 @@
     @include max-screen(1200px){
       display: block;
     }
+
+    @include max-screen(767px){
+      text-align: center;
+      max-width: 311px;
+    }
+
 
     .telemetry_text {
       max-width: 445px;
@@ -196,6 +266,10 @@
         padding-top: 56px;
       }
 
+      @include max-screen(767px){
+        padding-top: 56px;
+      }
+
       h3 {
         margin-bottom: 24px;
 
@@ -204,16 +278,23 @@
           margin: auto;
           padding-bottom: 40px;
         }
+
+        @include max-screen(737px){
+          margin-bottom: 32px;
+        }
       }
 
       p {
         margin-bottom: 40px;
+
+        @include max-screen(737px){
+          margin-bottom: 32px;
+        }
       }
     }
 
     .telemetry_img {
       padding-top: 53px;
-
 
       @include min-screen(1200px){
         order: 2;
@@ -227,7 +308,6 @@
         max-width: 445px;
         margin: auto;
       }
-
 
       .tele_img_box {
         overflow: hidden;
@@ -250,6 +330,10 @@
       @include screen(767px, 1200px){
         top: 0;
       }
+
+      @include max-screen(767px){
+        display: none;
+      }
     }
 
   }
@@ -260,6 +344,11 @@
 
     @include screen(767px, 1200px){
       top: 307px;
+    }
+
+    @include max-screen(767px){
+      top: 160px;
+      right: -390px;
     }
   }
 }
@@ -275,12 +364,21 @@
     display: flex;
   }
 
+  @include max-screen(767px){
+    padding-bottom: 120px;
+  }
+
   .container {
     margin: auto;
     justify-content: space-between;
 
     @include max-screen(1200px){
       display: block;
+    }
+
+    @include max-screen(767px){
+      max-width: 311px;
+      text-align: center;
     }
   }
 
@@ -289,6 +387,10 @@
     position: absolute;
     top: 0;
     left: -335px;
+
+    @include max-screen(767px){
+      display: none;
+    }
   }
 
   .city_img {
@@ -313,6 +415,10 @@
       position: absolute;
       top: 0;
       left: -545px;
+
+      @include max-screen(767px){
+        left: -500px;
+      }
     }
   }
 
@@ -326,6 +432,10 @@
       padding-top: 64px;
     }
 
+    @include max-screen(767px){
+      padding-top: 56px;
+    }
+
     h3 {
       margin-bottom: 24px;
       @include screen(767px, 1200px){
@@ -333,10 +443,16 @@
         margin: auto;
         padding-bottom: 40px;
       }
+      @include max-screen(767px){
+        margin-bottom: 32px;
+      }
     }
 
     p {
       margin-bottom: 40px;
+      @include max-screen(767px){
+        margin-bottom: 32px;
+      }
     }
 
   }
@@ -353,6 +469,10 @@
     display: flex;
   }
 
+  @include max-screen(767px){
+    padding-bottom: 120px;
+  }
+
   .container {
     margin: auto;
     justify-content: space-between;
@@ -360,6 +480,11 @@
 
     @include max-screen(1200px){
       display: block;
+    }
+
+    @include max-screen(767px){
+      max-width: 311px;
+      text-align: center;
     }
 
     .payments_text {
@@ -375,6 +500,9 @@
         text-align: center;
         padding-top: 64px;
       }
+      @include max-screen(767px){
+        padding-top: 56px;
+      }
 
       h3 {
         margin-bottom: 24px;
@@ -383,10 +511,16 @@
           margin: auto;
           padding-bottom: 40px;
         }
+        @include max-screen(767px){
+          margin-bottom: 32px;
+        }
       }
 
       p {
         margin-bottom: 40px;
+        @include max-screen(767px){
+          margin-bottom: 32px;
+        }
       }
     }
 
@@ -416,6 +550,11 @@
         position: absolute;
         top: 80px;
         left: 250px;
+
+        @include max-screen(767px){
+          top: 0;
+          left: 120px;
+        }
       }
     }
 
@@ -425,6 +564,10 @@
       right: -335px;
       top: 0;
       z-index: -1;
+
+      @include max-screen(767px){
+        display: none;
+      }
     }
   }
 }
