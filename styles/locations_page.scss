@@ -6,6 +6,7 @@
   background-image: url("../images/locationsPage/locations_banner.jpeg");
   padding: 72px 0;
   position: relative;
+  margin-top: 96px;
 
   @include max-screen(767px){
     padding: 60px 0;

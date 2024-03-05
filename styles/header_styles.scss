@@ -1,6 +1,12 @@
 @import "mixins";
 
 header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #FFFFFF;
+  z-index: 1000;
+
   @include screen(767px, 1200px) {
     padding: 0 20px;
   }

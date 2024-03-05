@@ -138,6 +138,13 @@ body {
   visibility: hidden;
 }
 
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #FFFFFF;
+  z-index: 1000;
+}
 @media screen and (min-width: 767px) and (max-width: 1200px) {
   header {
     padding: 0 20px;
@@ -290,6 +297,7 @@ header .menu_box a {
   padding-top: 153px;
   padding-bottom: 152px;
   position: relative;
+  margin-top: 96px;
 }
 @media screen and (min-width: 767px) and (max-width: 1200px) {
   .main_banner {
@@ -1033,6 +1041,7 @@ footer .footer_menu .footer_nav_box .footer_icon ul a:hover {
   background-image: url("../images/aboutPage/about_banner.jpg");
   padding: 72px 0;
   position: relative;
+  margin-top: 96px;
 }
 @media screen and (max-width: 767px) {
   .main_about {
@@ -1500,6 +1509,7 @@ footer .footer_menu .footer_nav_box .footer_icon ul a:hover {
   background-image: url("../images/careersPage/careers_banner.jpeg");
   padding: 72px 0;
   position: relative;
+  margin-top: 96px;
 }
 @media screen and (max-width: 767px) {
   .main_careers {
@@ -1787,6 +1797,7 @@ footer .footer_menu .footer_nav_box .footer_icon ul a:hover {
   background-image: url("../images/locationsPage/locations_banner.jpeg");
   padding: 72px 0;
   position: relative;
+  margin-top: 96px;
 }
 @media screen and (max-width: 767px) {
   .main_location {

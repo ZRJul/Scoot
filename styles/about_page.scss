@@ -5,6 +5,7 @@
   background-image: url("../images/aboutPage/about_banner.jpg");
   padding: 72px 0;
   position: relative;
+  margin-top: 96px;
 
   @include max-screen(767px) {
     padding: 60px 0;
