@@ -28,6 +28,8 @@ loadComponent('header.html', 'header', function() {
 // Загрузка footer.html
 loadComponentFooter('footer.html', 'footer');
 
+
+
 document.addEventListener('DOMContentLoaded', () => {
     const contentDIV = document.querySelector('.content');
     const navLinks = document.querySelectorAll('.nav_link');
@@ -98,18 +100,31 @@ document.addEventListener('DOMContentLoaded', () => {
                 setTimeout(() => {
                     contentDIV.classList.remove('fade_out');
                     history.pushState({}, '', url);
-                    initializeAccordion()
+                    initializeAccordion();
+                    bindNavLinks();
                 }, 10);
             })
-
-
     };
 
-    navLinks.forEach(el => {
-        el.addEventListener('click', (e) => {
-            e.preventDefault();
-            const url = e.currentTarget.getAttribute('href');
-            loadPage(url);
+    function bindNavLinks() {
+        navLinks.forEach(el => {
+            el.addEventListener('click', navLinkClickHandler);
+        });
+    }
+
+    function navLinkClickHandler(e) {
+        e.preventDefault();
+        const url = e.currentTarget.getAttribute('href');
+        loadPage(url);
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+
+        bindNavLinks();
+        loadPage(window.location.pathname);
+
+        window.addEventListener('popstate', () => {
+            loadPage(window.location.pathname);
         });
     });
 
